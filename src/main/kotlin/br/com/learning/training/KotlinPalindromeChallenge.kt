@@ -28,12 +28,7 @@ fun isPalindrome(str: String): Boolean {
 }
 
 fun getInverseString(str: String): String {
-    val backwardsStrBuilder = StringBuilder()
-    for (index in str.indices) {
-        backwardsStrBuilder.append(str[(str.length-1)-index])
-    }
-
-    return backwardsStrBuilder.toString()
+    return str.reversed()
 }
 
 fun removeNonAlphaNumericChars(str: String): String {
