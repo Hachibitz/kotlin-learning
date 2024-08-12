@@ -11,7 +11,7 @@ class Person constructor(firstName: String, lastName: String) {
     }
 }*/
 
-class Person internal constructor (firstName: String, lastName: String) { //construtor primário
+class Person internal constructor (var firstName: String, var lastName: String) { //construtor primário
 
     init {
         println("Created a person named: $firstName $lastName")
